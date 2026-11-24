@@ -1,0 +1,16 @@
+name = "paperplane-api"
+main = "src/index.js"
+compatibility_date = "2026-11-23"
+
+# Day 1 skeleton: no KV or D1 bindings yet. Day 2 binds KV (pairing codes,
+# outbox) and D1 (inbox, watchlists) and the Worker code switches its
+# in-memory stores for those bindings.
+#
+# Deploy route: the Cloudflare API token flow (custom.cloudflare connector).
+# Public URL rule: the live backend goes on a neutral Pages project domain
+# or a custom domain, never on the account workers.dev subdomain (it
+# contains the account name). The app.json network whitelist already lists
+# https://paperplane.pages.dev as the intended host.
+#
+# Secrets: BRIDGE_SECRET is set at deploy time via the connector (wrangler
+# secret put). The bot token is NEVER a Worker secret - see README.md.

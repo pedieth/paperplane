@@ -1,0 +1,1 @@
+{"description":"PaperPlane VM bridge - polls Telegram via the ppbot helper and syncs with the Worker API.","name":"paperplane-bridge","private":true,"scripts":{"start":"node bridge.mjs"},"type":"module","version":"0.1.0"}

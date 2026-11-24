@@ -1,0 +1,14 @@
+# Dependencies and local environments
+node_modules/
+venv/
+__pycache__/
+
+# Bridge runtime state (rewritten while the bridge runs; copy
+# watched-chats.example.json to watched-chats.json to configure)
+backend/bridge/state.json
+backend/bridge/watched-chats.json
+
+# Local noise
+*.log
+.env
+.DS_Store

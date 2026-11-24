@@ -1,0 +1,1 @@
+{"name":"paperplane-toolchain-check","private":true,"version":"0.0.0","dependencies":{"@evenrealities/even_hub_sdk":"^0.0.16","@evenrealities/evenhub-cli":"^0.2.0","@evenrealities/evenhub-simulator":"^0.9.5"}}
